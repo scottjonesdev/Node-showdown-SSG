@@ -1,5 +1,5 @@
 # Node-showdown-SSG
-A Static Site Generator that uses showdown to convert markdown files into html. 
+A Static Site Generator that uses Node.js and Showdown to convert markdown files into html. 
 
 ## Setup 
 
@@ -8,6 +8,11 @@ A Static Site Generator that uses showdown to convert markdown files into html.
 ### Install Showdown
 	npm install showdown 
 
-## Generate html file
-	node test.js
+### Update partials for your web project
+	Head, Header, and Footer files are stored in the 'partials' folder. Update them as needed for your project. They are automatically concatenated into each page when you run the build file. 
 
+### Create content for website
+	Write markdown files and store them in the 'content' folder
+
+## Generate html files
+	node build_html.js
