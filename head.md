@@ -11,16 +11,3 @@
   </head>
 </head>
 
-<header>
-	<nav>
-		<p>Test Nav 1</p>
-		<p>Test Nav 2</p>
-	</nav>
-</header>
-<h1 id="test">test</h1>
-<h2 id="test2">test 2</h2>
-<h2 id="test3">test 3</h2><footer>
-	<a href="mailto:scott@scottj.ca" class="mail">Contact: scott@scottj.ca</a>
-	<p>© 2021scottjonesdev</p>
-</footer>
-</html>
