@@ -1,5 +1,5 @@
 # Node-showdown-SSG
-A Static Site Generator that uses Node.js and Showdown to convert markdown files into html. 
+A Static Site Generator that uses **Node.js** and [Showdown](https://github.com/showdownjs/showdown) to convert markdown files into html. 
 
 ## Setup 
 
