@@ -1,7 +1,7 @@
 <header>
 	<nav>
-		<p>Test Nav 1</p>
-		<p>Test Nav 2</p>
+		<a href='page1.html'>Page 1</a>
+		<a href='page2.html'>Page 2</a>
+		<a href='page3.html'>Page 3</a>
 	</nav>
 </header>
-<body>
