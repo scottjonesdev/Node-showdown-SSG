@@ -15,7 +15,7 @@ const filenames = fs.readdirSync(directoryName);
 
 //for each content file, convert md to html and concatenate content with partials (head, header, footer)
 filenames.forEach((file) => {
-	let content = fs.readFileSync(process.cwd() + "/" + directoryName + '/' + file).toString();
+	const content = fs.readFileSync(process.cwd() + "/" + directoryName + '/' + file).toString();
 	    const converter = new showdown.Converter();
 	    const bodyContent = converter.makeHtml(content);
 
