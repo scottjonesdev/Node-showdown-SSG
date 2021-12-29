@@ -10,12 +10,12 @@ const header = fs.readFileSync(process.cwd() + "/" + 'partials/header.md').toStr
 const footer = fs.readFileSync(process.cwd() + "/" + 'partials/footer.md').toString();
 
 //read all files in content folder
-const directoryName = "content";
-const filenames = fs.readdirSync(directoryName);
+const contentPath = "content";
+const contentFiles = fs.readdirSync(contentPath);
 
 //for each content file, convert md to html and concatenate content with partials (head, header, footer)
-filenames.forEach((file) => {
-	const content = fs.readFileSync(process.cwd() + "/" + directoryName + '/' + file).toString();
+contentFiles.forEach((file) => {
+	const content = fs.readFileSync(process.cwd() + "/" + contentPath + '/' + file).toString();
 	    const converter = new showdown.Converter();
 	    const bodyContent = converter.makeHtml(content);
 
