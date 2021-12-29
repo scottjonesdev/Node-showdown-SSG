@@ -1,0 +1,22 @@
+{
+  "name": "node-showdown-ssg",
+  "version": "1.0.0",
+  "description": "A Static Site Generator that uses **Node.js** and **[Showdown](https://github.com/showdownjs/showdown)** to convert markdown files into html.",
+  "main": "build_html.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scottjonesdev/Node-showdown-SSG.git"
+  },
+  "author": "Scott Jones",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scottjonesdev/Node-showdown-SSG/issues"
+  },
+  "homepage": "https://github.com/scottjonesdev/Node-showdown-SSG#readme",
+  "devDependencies": {
+    "showdown": "^1.9.1"
+  }
+}
