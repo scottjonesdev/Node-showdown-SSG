@@ -16,15 +16,10 @@ const contentFiles = fs.readdirSync(contentPath);
 //for each content file, convert md to html and concatenate content with partials (head, header, footer)
 contentFiles.forEach((file) => {
 	const content = fs.readFileSync(process.cwd() + "/" + contentPath + '/' + file).toString();
-	    const converter = new showdown.Converter();
-	    const bodyContent = converter.makeHtml(content);
+	const converter = new showdown.Converter();
+	const bodyContent = converter.makeHtml(content);
 
 	//write or replace the html file with corresponding filename. trim .md off the end before adding .html extension
-	fs.writeFile(file.slice(0,-3) + '.html', 
-		head + '\n' + header + '\n' +'<body>' + '\n' + bodyContent + '\n' + '</body>' + '\n' + footer, 
-		function (err) {
-			if (err) throw err;
-	  	console.log(file.slice(0,-3) + '.html' + ' created or updated');
-		}
-	);
+	fs.writeFileSync(file.slice(0,-3) + '.html', head + '\n' + header + '\n' +'<body>' + '\n' + bodyContent + '\n' + '</body>' + '\n' + footer);
+	console.log(file.slice(0,-3) + '.html' + ' created or updated');	
 });
