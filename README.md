@@ -5,8 +5,8 @@ A Static Site Generator that uses **Node.js** and **[Showdown](https://github.co
 
 ### Install Node.js
 
-### Install Showdown
-	npm install showdown 
+### Install Package
+	npm install
 
 ### Update partials for your web project
 	Head, Header, and Footer files are stored in the 'partials' folder. 
