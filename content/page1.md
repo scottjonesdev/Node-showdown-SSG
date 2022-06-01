@@ -4,4 +4,3 @@
 This page began as a **markdown** file. 
 
 Now it is an **HTML** file.
-
